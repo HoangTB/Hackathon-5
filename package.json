@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "tsconfig.json": "^1.0.11"
+  }
+}

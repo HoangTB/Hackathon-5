@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root {
+      text-align: center;
+    }
+
+    #box {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 20px;
+      padding: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin: 0 auto;
+
+    }
+
+    th,
+    td {
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+
+    }
+
+    input {
+      padding: 8px;
+    }
+
+    input[type="submit"] {
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 50px;
+      border-radius: 5px;
+    }
+
+    #sex,
+    #updateSex {
+      height: 30px;
+    }
+
+    #form2,
+    #form3 {
+      height: 300px;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <div id="box">
+    <table id="form1">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Sex</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+    <form id="form2">
+      <h2>ADD STUDENT</h2>
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="number" id="age" placeholder="Age" required>
+      <select id="sex" required>
+        <option value="">---</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      <input type="submit" value="Add Student">
+    </form>
+    <form id="form3">
+      <h2>UPDATE STUDENT</h2>
+      <input type="text" id="updateName" placeholder="Name" required>
+      <input type="number" id="updateAge" placeholder="Age" required>
+      <select id="updateSex" required>
+        <option value="">---</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      <input type="submit" value="Update Student">
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
